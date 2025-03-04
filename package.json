@@ -1,0 +1,35 @@
+{
+  "name": "deepseek-desktop",
+  "version": "1.0.0",
+  "description": "DeepSeek Desktop Client",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && tsc --project tsconfig.electron.json",
+    "start": "next start",
+    "lint": "next lint",
+    "electron": "cross-env NODE_ENV=development wait-on http://localhost:3000 && electron .",
+    "electron-dev": "concurrently \"pnpm dev\" \"pnpm electron\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@types/node": "^20.11.24",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.3.0",
+    "electron-builder": "^24.13.3",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.3.3",
+    "wait-on": "^7.2.0"
+  }
+}
