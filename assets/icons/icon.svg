@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A2A2A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad)"/>
+  
+  <!-- DeepSeek Logo -->
+  <path d="M256 96C179.307 96 116 159.307 116 236C116 312.693 179.307 376 256 376C332.693 376 396 312.693 396 236C396 159.307 332.693 96 256 96ZM256 336C197.019 336 156 294.981 156 236C156 177.019 197.019 136 256 136C314.981 136 356 177.019 356 236C356 294.981 314.981 336 256 336Z" fill="#00FF9D"/>
+  
+  <!-- 中心点 -->
+  <circle cx="256" cy="236" r="40" fill="#00FF9D"/>
+  
+  <!-- 光晕效果 -->
+  <circle cx="256" cy="236" r="60" fill="#00FF9D" opacity="0.1"/>
+</svg> 

@@ -7,16 +7,43 @@
   "files": [
     "dist/**/*",
     "out/**/*",
-    "package.json"
+    "package.json",
+    "assets/icons/**/*"
   ],
   "mac": {
     "category": "public.app-category.developer-tools",
-    "target": ["dmg", "zip"]
+    "target": ["dmg", "zip"],
+    "icon": "assets/icons/icon.icns",
+    "darkModeSupport": true,
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist"
   },
   "win": {
-    "target": ["nsis", "zip"]
+    "target": ["nsis", "zip"],
+    "icon": "assets/icons/icon.ico",
+    "artifactName": "${productName}-Setup-${version}.${ext}"
   },
   "linux": {
-    "target": ["AppImage", "deb"]
+    "target": ["AppImage", "deb"],
+    "icon": "assets/icons/icon.png",
+    "category": "Development",
+    "artifactName": "${productName}-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "DeepSeek Desktop"
+  },
+  "dmg": {
+    "contents": [
+      {
+        "x": 130,
+        "y": 220
+      }
+    ]
   }
 } 

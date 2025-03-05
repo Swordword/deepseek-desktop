@@ -5,22 +5,21 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
+    icon: path.join(__dirname, '../../assets/icons/icon-512.png'),
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
+      webSecurity: false // 允许加载外部资源
     }
   });
-  mainWindow.loadURL('http://localhost:3000');
-  mainWindow.webContents.openDevTools();
-  // 在开发环境中加载 localhost:3000
-  // if (process.env.NODE_ENV === 'development') {
-  //   console.log('process.env.NODE_ENV', process.env.NODE_ENV)
-  //   mainWindow.loadURL('http://localhost:3000');
-  //   mainWindow.webContents.openDevTools();
-  // } else {
-  //   // 在生产环境中加载构建后的文件
-  //   mainWindow.loadFile(path.join(__dirname, '../../out/index.html'));
-  // }
+
+  // 加载 DeepSeek 网页
+  mainWindow.loadURL('https://chat.deepseek.com/');
+  
+  // 只在开发环境打开开发者工具
+  if (process.env.NODE_ENV === 'development') {
+    mainWindow.webContents.openDevTools();
+  }
 }
 
 app.whenReady().then(createWindow);
