@@ -36,5 +36,49 @@
     "electron-builder": "^24.13.3",
     "sharp": "^0.33.5",
     "typescript": "^5.3.3"
+  },
+  "build": {
+    "appId": "com.deepseek.desktop",
+    "productName": "DeepSeek Desktop",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg", "zip"],
+      "icon": "assets/icons/icon.icns",
+      "darkModeSupport": true,
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
+    },
+    "win": {
+      "target": ["nsis", "zip"],
+      "icon": "assets/icons/icon.ico"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Office",
+      "icon": "assets/icons/icon-512.png"
+    },
+    "compression": "maximum",
+    "asar": true,
+    "asarUnpack": [],
+    "removePackageScripts": true,
+    "removePackageKeywords": true,
+    "npmRebuild": false,
+    "buildDependenciesFromSource": true,
+    "nodeGypRebuild": false,
+    "extraResources": [],
+    "extraMetadata": {
+      "main": "dist/main/index.js",
+      "dependencies": {},
+      "devDependencies": {}
+    }
   }
 }
