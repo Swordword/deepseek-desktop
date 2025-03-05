@@ -59,12 +59,15 @@
     },
     "win": {
       "target": ["nsis", "zip"],
-      "icon": "assets/icons/icon.ico"
+      "icon": "assets/icons/icon.ico",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
     },
-    "linux": {
-      "target": ["AppImage", "deb"],
-      "category": "Office",
-      "icon": "assets/icons/icon-512.png"
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "DeepSeek Desktop"
     },
     "compression": "maximum",
     "asar": true,
