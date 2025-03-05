@@ -1,7 +1,7 @@
 {
   "name": "deepseek-desktop",
   "version": "1.0.0",
-  "description": "DeepSeek Desktop Client",
+  "description": "DeepSeek Desktop Client - A native desktop application for DeepSeek AI services",
   "main": "dist/main/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.electron.json",
@@ -12,9 +12,23 @@
     "dist": "electron-builder",
     "generate-icons": "node scripts/generate-icons.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "deepseek",
+    "ai",
+    "desktop",
+    "electron",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/deepseek-desktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/deepseek-desktop/issues"
+  },
+  "homepage": "https://github.com/yourusername/deepseek-desktop#readme",
   "devDependencies": {
     "@types/node": "^20.11.24",
     "cross-env": "^7.0.3",
