@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/deepseek-desktop.git"
+    "url": "git+https://github.com/Swordword/deepseek-desktop.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/deepseek-desktop/issues"
+    "url": "https://github.com/Swordword/deepseek-desktop/issues"
   },
-  "homepage": "https://github.com/yourusername/deepseek-desktop#readme",
+  "homepage": "https://github.com/Swordword/deepseek-desktop#readme",
   "devDependencies": {
     "@types/node": "^20.11.24",
     "cross-env": "^7.0.3",

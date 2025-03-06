@@ -21,7 +21,7 @@ DeepSeek Desktop 是一个基于 Electron 的桌面客户端，让您可以更�
 
 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/deepseek-desktop.git
+git clone https://github.com/Swordword/deepseek-desktop.git
 cd deepseek-desktop
 ```
 

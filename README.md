@@ -21,7 +21,7 @@ DeepSeek Desktop is an Electron-based desktop client that provides a more conven
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/deepseek-desktop.git
+git clone https://github.com/Swordword/deepseek-desktop.git
 cd deepseek-desktop
 ```
 
